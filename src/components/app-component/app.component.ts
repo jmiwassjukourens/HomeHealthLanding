@@ -1,14 +1,14 @@
 import { CommonModule, NgStyle } from '@angular/common';
-import { Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
-import { TranslateModule, TranslateService } from '@ngx-translate/core'; 
+import { Component, HostListener, Input, OnInit, ViewEncapsulation } from '@angular/core';
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     CommonModule,
-    NgStyle,
-    TranslateModule 
+    NgStyle 
   ],
   templateUrl: './app.component.html',
   encapsulation: ViewEncapsulation.Emulated
@@ -17,12 +17,9 @@ export class AppComponent implements OnInit {
   isMenuActive = false;
   isDesktop = false;
   putbr = false;
+  
   expandedIndex: number | null = null;
-
-  constructor(private translate: TranslateService) {
-    const savedLang = localStorage.getItem('lang') || 'en';
-    this.translate.use(savedLang);
-  }
+  @Input() lang: string = 'en';
 
   ngOnInit() {
     this.isDesktop = window.innerWidth > 768;
@@ -30,8 +27,7 @@ export class AppComponent implements OnInit {
   }
 
   switchLanguage(lang: string) {
-    this.translate.use(lang);
-    localStorage.setItem('lang', lang);
+    this.lang = lang;
   }
 
   toggleMenu() {

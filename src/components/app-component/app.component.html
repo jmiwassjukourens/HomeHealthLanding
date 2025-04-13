@@ -1,3 +1,4 @@
+<div  *ngIf="lang == 'en'">
 <main>
   <div class="container-header">
     <header>
@@ -33,13 +34,13 @@
       <br>
         <div class="flag-container">
           <a class="language-option" href="#" (click)="switchLanguage('es')">
-            <img class="flag_img" src="/assets/spain.png" alt="Spanish Flag">
-            <span>{{ 'LANGUAGE' | translate }}</span>
+            <img class="flag_img" src="/spain.png" alt="Spanish Flag">
+            <span>Spanish</span>
           </a>
 
           <a class="language-option" href="#" (click)="switchLanguage('en')">
-            <img class="flag_img" src="/assets/united-states.png" alt="US Flag">
-            <span>{{ 'LANGUAGE' | translate }}</span>
+            <img class="flag_img" src="/united-states.png" alt="US Flag">
+            <span>English</span>
           </a>
         </div>
 
@@ -47,14 +48,10 @@
       <section class="reviews">
         <div class="container">
           <h1 class="init-title">HOME HEALTH CARE SERVICES</h1>
-  
+          <br>
           <h1 class="title-main">
-            Are You Looking for <br><span class="cyan_effect">Trusted </span> &amp; <span class="cyan_effect">Local </span><br>
-            Senior Care in <strong>LA</strong>?
-          </h1>
-          
-          <h1 class="title-main">
-            We Got You <span class="cyan_effect">Covered </span>
+              Quality <span class="cyan_effect">Home Health<br>Care</span> for Seniors<br> 
+              covered by <span class="cyan_effect">Medicare.</span>
           </h1>
         </div>
 
@@ -72,18 +69,16 @@
       
         
         <div class="text-content">
-          <p class="paragraph_2 ">
-              <strong>Los Angeles Senior Services</strong> focuses<br>
-              on helping Seniors find <strong>Health Care,<br>
-              Community and Food Resources </strong><br>
-              in the Local Community that <strong>Support</strong><br>
-              their <strong>Daily-Needs.</strong> Our line is <strong>Open 24/7!</strong>
-          </p>
+          <ul class="service-list">
+            <li>100% Covered by <strong>Medicare</strong></li>
+            <li>Skilled <strong>Nursing</strong> & <strong>Primary Care</strong></li>
+            <li>Physical <strong>Therapy</strong> & Personal <strong>Care</strong></li>
+            <li><strong>Comfort</strong> & <strong>Independence</strong> at Home</li>
+            <li><strong>Licensed</strong> & <strong>Compassionate</strong> Caregivers</li>
+          </ul>
         </div>
-        
-        <br>
 
-        <h1   class="init-title cyan_effect">SAN FERNANDO VALLEY // LOS ANGELES</h1>
+        <h1   class="init-title cyan_effect">SCHEDULE AN APPOINTMENT TODAY!</h1>
         <br>
         
       </section>
@@ -105,7 +100,74 @@
 
 
 
+<!--> Section 2<-->
 
+  <div  class="section-web section-2">
+    
+    <div class="section-2-1">
+      <section class="reviews">
+        <div class="container">
+
+          <br>
+
+          <h1 class="title-main color-black">
+            Do You Need 
+            <span class="cyan_effect">Help</span> At <span class="cyan_effect">Home</span>?
+          </h1>
+        </div>  
+        
+        <div class="text-content">
+          <p class="paragraph_2 color-black">
+              Our <strong>Team of Caregivers</strong> is <strong>Available 24<br>
+              hs</strong> to <strong>Attend Your Needs.</strong><br><br> 
+
+              From <strong>Medical Care</strong> & <strong>Devices</strong> to <strong>Food<br>
+              Resources,</strong> Los Angeles Senior Services<br>
+              aims to <strong>Support Seniors</strong> & <strong>Families</strong> in the<br>
+              Local Community towards a better<br>
+              <strong>Quality of Life.</strong>
+          </p>
+        </div>
+        <br>
+        <br>
+      </section>
+    </div>
+
+<div class="section-2-2">
+  <section class="reviews">
+    <div class="container">
+
+      <div class="help-image-container">
+        <h1 class="help-title top-text">Nursing &amp; Physical Therapy</h1>
+        <img class="help-image" src="help/1.png" alt="help1">
+
+      </div>
+
+      <div class="help-image-container">
+        <h1 class="help-title top-text">Nursing &amp; Physical Therapy</h1>
+        <img class="help-image" src="help/3.png" alt="help1">
+      </div>
+
+      <div class="help-image-container">
+        <h1 class="help-title top-text">Nursing &amp; Physical Therapy</h1>
+        <img class="help-image" src="help/3.png" alt="help1">
+      </div>
+          <div class="help-image-container">
+        <h1 class="help-title top-text">Nursing &amp; Physical Therapy</h1>
+        <img class="help-image" src="help/3.png" alt="help1">
+      </div>      <div class="help-image-container">
+        <h1 class="help-title top-text">Nursing &amp; Physical Therapy</h1>
+        <img class="help-image" src="help/3.png" alt="help1">
+      </div>
+    </div> 
+  </section>
+  <br>
+  <br>
+</div>
+
+
+
+  </div>
 
 
 
@@ -211,4 +273,4 @@
     <span class="white_effect">DIRECTIONS</span>
   </a>
 </footer>
-
+</div>

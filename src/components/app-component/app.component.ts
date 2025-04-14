@@ -1,5 +1,6 @@
 import { CommonModule, NgStyle } from '@angular/common';
 import { Component, HostListener, Input, OnInit, ViewEncapsulation } from '@angular/core';
+import { ContactFormComponent } from '../contact-form/contact-form.component';
 
 
 
@@ -8,7 +9,8 @@ import { Component, HostListener, Input, OnInit, ViewEncapsulation } from '@angu
   standalone: true,
   imports: [
     CommonModule,
-    NgStyle 
+    NgStyle,
+    ContactFormComponent
   ],
   templateUrl: './app.component.html',
   encapsulation: ViewEncapsulation.Emulated

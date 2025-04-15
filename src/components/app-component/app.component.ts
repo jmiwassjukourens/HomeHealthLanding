@@ -47,4 +47,16 @@ export class AppComponent implements OnInit {
     this.isMenuActive = !this.isDesktop ? this.isMenuActive : false;
     this.putbr = this.isDesktop;
   }
+
+  services = [
+  { image: 'services/service1.png' },
+  { image: 'services/service2.png' },
+  { image: 'services/service3.png' },
+  { image: 'services/service4.png' },
+  { image: 'services/service5.png' },
+  { image: 'services/service6.png' },
+ 
+  ];
+  
+
 }

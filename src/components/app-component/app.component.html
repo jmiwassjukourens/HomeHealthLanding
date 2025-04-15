@@ -189,9 +189,148 @@
   </div>
 </div>
 
+<div #section class="section-web section-4">
+
+  <div class="section-4-2">
+    <section >
+      <br>
+          <h1 class="title-main">
+            <span class="cyan_effect">In Need of <br></span>Food Resources<span class="cyan_effect">?</span>
+          </h1>
+          <h1 class="init-title">LET US GET YOU <span class="cyan_effect">ANYTHING YOU NEED</span>.</h1>
+          <br>
+         <div class="text-content">
+          <p class="paragraph_2">
+              Complete the form below and we´ll<br>contact you right away.
+              <br><br>
+              Sign up today to recieve a<br>
+              <strong>Monthly Fresh Grocery Bag on Us</strong>!
+          </p>
+        </div>
+
+      <div class="container text-content">
+        <app-contact-form style="padding: 0 20px;"
+                           [emailTemplate]="'template_7llv04q'"
+                           [type_lead]="'Coverage'"
+                           [emailAddress]="'info@sunvidamedicalclinic.com'"
+                           [lenguage]="'true'"
+                           [color_btn]="'#23B5D3'">
+        </app-contact-form>
+      </div>
+    </section>
+  </div>
+</div>
 
 
+<div class="section-web section-5">
 
+  <div class="section-5-1">
+
+    <br>
+
+    <h1 class="title-main">
+      What is<br><span class="cyan_effect">Home Health Care</span>?
+    </h1>
+
+    <div class="text-content">
+      <p class="paragraph_2">
+          <strong>Home Health Care</strong> provides <strong>Medical</strong> and
+          <strong>Personal Care Services</strong> in the Comfort of
+          your <strong>Loved One’s Home.</strong><br><br>
+
+          At <strong>Los Angeles Senior Services,</strong> we help
+          seniors stay <strong>Safe, Independent,</strong> an
+          <strong>Well-Cared</strong> for with:
+      </p>
+  </div>
+  <br><br>
+  <div class="container-text-list">
+    <ul class="service-list">
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Skilled Nursing</strong> - Medication management, wound care & health monitoring.</li><br>
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Physical, Occupational & Speech Therapy</strong> – Support for mobility, strength & recovery.</li><br>
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Personal Care Assistance</strong> – Help with bathing, dressing & daily tasks.</li><br>
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Chronic Disease Management</strong> – Care for diabetes, heart disease, stroke recovery & more.</li><br>
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Fall Prevention & Safety Checks</strong> – Ensuring a secure home environment.</li>
+      
+    </ul>
+  </div>
+
+  </div>
+
+
+  <div class="section-5-2">
+
+    <section class="services-photos">
+
+      <div class="services-container">
+        <div class="services-list">
+          <div *ngFor="let service of services" class="services-card">
+            <div class="services-image" [ngStyle]="{'background-image': 'url(' + service.image + ')'}"></div>
+          </div>
+        </div>
+      </div>
+   
+    </section>
+
+  </div>
+</div>
+
+
+<div #section class="section-web section-6">
+
+  <div class="section-6-1">
+
+    <br>
+
+    <h1 class="title-main">
+      <span class="cyan_effect">Who</span> can <span class="cyan_effect">Benefit</span> for<br>
+      Home Health Care?
+    </h1>
+
+    <div class="text-content">
+      <p class="paragraph_2">
+          <strong>Home Health Care</strong> Services are paid by <strong>Medicare</strong>. No Out-of-Pocket Costs 
+          are required to Enrol.
+
+          Our Services are Designated for<br>
+          <strong>Seniors Who:</strong>
+      </p>
+  </div>
+  <br><br>
+  <div class="container-text-list">
+    <ul class="service-list">
+      <li>✅ Are <strong>recovering</strong> from illness, surgery, or hospitalization.</li><br>
+      <li>✅ Need help <strong>managing</strong> chronic conditions like diabetes or heart disease.</li><br>
+      <li>✅ Have <strong>mobility challenges</strong> and need assistance with daily activities.</li><br>
+      <li>✅ Prefer to <strong>receive care at home</strong> rather than in a facility.</li><br>
+    </ul>
+  </div>
+
+  </div>
+
+
+  <div class="section-6-2">
+    <div class="text-content">
+      <p class="paragraph_2">
+          <strong>Not sure if your loved one qualifies?</strong><br><br>
+
+          Contact us for a Free Consultation to<br>
+          <strong>Determine Eligibility Today.</strong>
+      </p>
+  </div>
+  <br>
+    <div class="container text-content">
+        <app-contact-form style="padding: 0 20px;"
+                           [emailTemplate]="'template_7llv04q'"
+                           [type_lead]="'Coverage'"
+                           [emailAddress]="'info@sunvidamedicalclinic.com'"
+                           [lenguage]="'true'"
+                           [color_btn]="'#23B5D3'">
+        </app-contact-form>
+    </div>
+
+  </div>
+</div>
 
 <!-- final Section-->
 <div #section class="section-web section-final">
@@ -209,7 +348,7 @@
 
           <div class="network-container">
             <a href="https://www.instagram.com/sunvidamedicalclinic/" target="_blank" class="network-link">
-              <img src="/facebookdesktop.png" alt="Facebook" class="network_img" id="facebook">
+              <img src="/facebook.png" alt="Facebook" class="network_img" id="facebook">
               <p class="paragraph_3" style="padding-left:15px;">//laseniorservices</p>
             </a>
           </div>

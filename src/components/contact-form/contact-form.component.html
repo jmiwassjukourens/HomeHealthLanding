@@ -4,17 +4,17 @@
     type="text" 
     name="name" 
     ngModel 
-    [placeholder]="isEnglish ? 'My name is ...' : 'Mi nombre es ...'" 
+    [placeholder]="type_lead === 'Assessment' ? 'Patient Name...' : 'My name is ...'" 
     required 
     pattern="[A-Za-z\s]+" 
     #name="ngModel"
   />
   <div *ngIf="name.invalid && name.touched">
     <small class="error-message" *ngIf="name.errors?.['required']">
-      {{ isEnglish ? 'Name is required.' : 'El nombre es obligatorio.' }}
+      Name is required.
     </small>
     <small class="error-message" *ngIf="name.errors?.['pattern']">
-      {{ isEnglish ? 'Only letters are allowed.' : 'Solo se permiten letras.' }}
+      Only letters are allowed.
     </small>
   </div>
   
@@ -23,48 +23,48 @@
     type="tel" 
     name="phone" 
     ngModel 
-    [placeholder]="isEnglish ? 'My phone is ...' : 'Mi número es ...'" 
+    [placeholder]="type_lead === 'Assessment' ? 'Patient Phone Number...' : 'My phone is ...'" 
     required 
     pattern="^\+?\d{10,15}$" 
     #phone="ngModel"
   />
   <div *ngIf="phone.invalid && phone.touched">
     <small class="error-message" *ngIf="phone.errors?.['required']">
-      {{ isEnglish ? 'Phone is required.' : 'El teléfono es obligatorio.' }}
+      Phone is required.
     </small>
     <small class="error-message" *ngIf="phone.errors?.['pattern']">
-      {{ isEnglish ? 'Enter a valid phone number (10-15 digits).' : 'Ingrese un teléfono válido (10-15 dígitos).' }}
+      Enter a valid phone number (10-15 digits).
     </small>
   </div>
 
-  <!-- Email (opcional, sin required) -->
+  <!-- Email o Dirección (opcional) -->
   <input
-    type="email"
+    [type]="type_lead === 'Assessment' ? 'text' : 'email'"
     name="email"
     ngModel
-    [placeholder]="isEnglish ? 'My email is ...' : 'Mi correo es ...'"
-    email
+    [placeholder]="type_lead === 'Assessment' ? 'Street Address' : 'My email is ...'"
+    [email]="type_lead !== 'Assessment'"
     #email="ngModel"
   />
 
-
-<button
-  type="submit"
-  class="btn-question"
-  [disabled]="contactForm.invalid"
-  [ngStyle]="{ 'background-color': color_btn }"
->
-  {{
-    type_lead === 'Referral'
-      ? 'I WANT TO REFER PATIENTS'
-      : (isEnglish ? 'CALL ME TODAY' : 'LLÁMAME HOY')
-  }}
-</button>
-
-
+  <!-- Botón -->
+  <button
+    type="submit"
+    class="btn-question"
+    [disabled]="contactForm.invalid"
+    [ngStyle]="{ 'background-color': color_btn }"
+  >
+    {{
+      type_lead === 'Referral'
+        ? 'I WANT TO REFER PATIENTS'
+        : type_lead === 'Assessment'
+          ? 'I NEED AN ASSESSMENT'
+          : 'CALL ME TODAY'
+    }}
+  </button>
 </form>
 
 <!-- MENSAJE DE AGRADECIMIENTO -->
 <div *ngIf="formSubmitted" class="thank-you-message">
-  <p>{{ isEnglish ? 'We’ll call you in minutes!' : '¡Te llamaremos en unos minutos!' }}</p>
+  <p>We’ll call you in minutes!</p>
 </div>

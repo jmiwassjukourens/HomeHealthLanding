@@ -332,6 +332,47 @@
   </div>
 </div>
 
+
+<div class="section-web section-7">
+
+  <div class="section-7-1">
+
+    <br>
+
+    <h1 class="title-main">
+      <span class="cyan_effect">Why</span> Families &amp; Seniors<br>
+      <span class="cyan_effect">Trust</span> Our Services?
+    </h1>
+    <br>
+          <div class="container-text-list">
+            <ul class="service-list">
+              <li>🏡 <strong>Care in the Comfort of Home:</strong> Personalized care without leaving your home.</li><br>
+              <li>🌟 <strong>Licensed & Experienced Medical Staff:</strong> Nurses, therapists & home health aides.</li><br>
+              <li>💜 <strong>Compassionate, Family-Focused Approach:</strong> Treating your loved ones like our own.</li><br>
+              <li>🏡 <strong>Available to You 24 hs:</strong> Our Lines are Open to You and Your Family. Our Staff is Ready to Care for You at Any Moment.</li><br>
+            </ul>
+          </div>
+  <br><br>
+  </div>
+
+
+  <div class="section-7-2">
+
+    <section class="services-photos">
+
+      <div class="services-container">
+        <div class="services-list">
+          <div *ngFor="let service of services" class="services-card">
+            <div class="services-image" [ngStyle]="{'background-image': 'url(' + service.image + ')'}"></div>
+          </div>
+        </div>
+      </div>
+   
+    </section>
+
+  </div>
+</div>
+
 <!-- final Section-->
 <div #section class="section-web section-final">
   <!-- section12_1-desktop -->

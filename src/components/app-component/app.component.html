@@ -485,6 +485,198 @@
 </div>
 
 
+<div  class="section-web section-10">
+    
+  <div class="section-10-1">
+    <section class="reviews">
+      <div class="container">
+        <br>
+        <h1 class="init-title color-black">FAQ’s</h1>
+        <h1 class="title-main color-black">
+          Frequently Asked<br> Questions
+        </h1>
+
+      </div>
+
+    <div class="section-10-2">
+
+      <section class="more_about">
+              <div class="container">
+                <div class="text-content">
+                  <div class="about_services_list">
+                    <div class="service-item" *ngFor="let question of questions; let i = index">
+                      <button class="service-btn" 
+                              [ngClass]="{'cyan': i % 2 === 0, 'black': i % 2 !== 0}" 
+                              (click)="toggleService(i)">
+                        <span class="toggle-icon">{{ expandedIndex === i ? '-' : '+' }}</span>
+                        {{ question.question }}
+                      </button>
+                      <div class="service-content" *ngIf="expandedIndex === i">
+                        {{ question.answer }} <strong>{{ question.description_strong }}</strong>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+                       <div class="text-content">
+        <br>
+
+
+      </div>
+
+  
+      </section>
+
+
+
+    </div>  
+
+    </section>
+  </div>
+</div>
+
+
+
+<div  class="section-web section-11">
+    
+  <div class="section-11-1">
+    <section class="reviews">
+      <div class="container">
+        <br>
+        <h1 class="title-main">
+          Adult <span class="cyan_effect">Day </span> Health<br> Care<span class="cyan_effect"> Center </span>(ADHC)
+         
+        </h1>
+      </div>
+      <div class="text-content">
+        <ul class="service-list">
+          <li>Free <strong>Transportation</strong></li>
+          <li><strong>Chef-Prepared</strong> Meals</li>
+          <li><strong>Social Work</strong> Services &amp; Help</li>
+          <li><strong>Exercise</strong> &amp; <strong>Therapy</strong></li>
+          <li><strong>Socialization</strong> &amp; <strong>Recreation</strong></li>
+          <li><strong>Arts, Games</strong> &amp; <strong>Music</strong></li>
+          <li>Daily <strong>Nurse-Led Health</strong> Care</li>
+          <li><strong>Special Events</strong> &amp; <strong>Parties</strong></li>
+          <li><strong>English</strong> &amp; <strong>Spanish Classes</strong></li>
+        </ul>
+      </div>
+
+      
+   <br>
+      
+    </section>
+  </div>
+  
+  <div class="section-11-2">
+       <section>
+          <div class="container-visitadhc">
+          
+                <button class="btn-visitadhc">
+                  VISIT AN ADHC
+                </button>
+          </div>
+        </section>
+  </div>
+
+
+</div>
+
+<div  class="section-web section-12">
+    
+  <div class="section-12-1">
+    <section class="reviews">
+      <div class="container">
+        <br>
+        <h1 class="title-main">
+           <span class="cyan_effect">Hospice </span>&amp;<span class="cyan_effect"> Palliative </span><br> Care Services
+        </h1>
+      </div>
+        <div class="text-content">
+          <ul class="service-list">
+            <li><strong>Pain </strong>&amp;<strong> Symptom</strong> Management</li>
+            <li><strong>Emotional</strong> &amp; <strong>Psychological Support</strong></li>
+            <li><strong>24/7</strong> Medical Support</li>
+            <li><strong>Personalized Care</strong> Plans</li>
+            <li>Family<strong> Support</strong> &amp; <strong>Education</strong></li>
+            <li><strong>Spiritual Care</strong> Services</li>
+            <li><strong>Home-Based </strong>&amp;<strong> Facility Care</strong></li>
+            <li><strong>Respite Care </strong>for<strong> Families</strong></li>
+            <li><strong>Bereavement </strong>&amp;<strong> Grief Support</strong></li>
+          </ul>
+        </div>
+
+
+      
+   <br>
+      
+    </section>
+  </div>
+  
+  <div class="section-12-2">
+       <section>
+          <div class="container-visitadhc">
+          
+                <button class="btn-visitadhc">
+                  I NEED HOSPICE CARE
+                </button>
+          </div>
+        </section>
+  </div>
+</div>
+
+
+<div  class="section-web section-13">
+    
+  <div class="section-13-1">
+    <section class="reviews">
+      <br>
+      <h1 class="init-title color-black">OUR MISSION STATEMENT</h1>
+      <h1 class="title-main color-black">
+        Your Health. <br>
+        Our Priority.
+      </h1>
+
+
+    <div class="section-13-2">
+
+        <div class="text-content">
+        <br><br>
+        <p class="paragraph_2 color-black">
+          Our mission is to build 
+        <strong>Life-long Relationships</strong> with those 
+          who can Benefit from <strong>High-Quality 
+          Healthcare Programs</strong> covered by 
+        <strong>Medicare</strong> &amp; <strong>Medi-Cal.</strong><br><br>
+          
+          We believe every Senior deserves <strong>Compassionate, Personalized Care</strong> that enhances their <strong>Quality of Life</strong> while providing <strong>Peace of Mind</strong> to their Families.<br><br>
+          
+           Whether it’s <strong>Skilled Nursing, Therapy, Personal Care,</strong> or <strong>Chronic Disease Management,</strong> our dedicated 
+          team ensures that every individual receives the support they need—right in the <strong>comfort of their home.</strong><br><br>
+          
+          By Guiding Seniors and their loved ones through <strong>Accessible Healthcare Solutions,</strong> we help them maintain their Independence, Dignity, and Health for Years to come. 
+        </p>
+
+      </div>
+   
+      <img   class="signature" src="/signatureJaz.png" alt="signatureJaz">
+
+
+
+
+
+    </div>  
+
+    </section>
+  </div>
+  
+
+
+
+</div>
+
+
 
 <!-- final Section-->
 <div #section class="section-web section-final">
@@ -534,17 +726,17 @@
       <div class="container">
 
         <p style="padding: 0px;" class="paragraph_3">
-          Phone: 818-208-1077 // Fax: 818-279-0816
+          Phone: 818-922-7400
         </p>
         <p style="padding: 0px;" class="paragraph_3">
-          office&#64;sunvidamedicalclinic.com
+        info&#64;laseniorservices.com
         </p>
         <br>
         <br>
         <p style="padding: 5px 0px 0px 0px;" class="copyright">
           &#169; Copyright 2025 - LA SENIOR SERVICES LLC
         </p>
-        <p style="padding: 5px 0px 0px 0px;" class="copyright">
+        <p style="padding-bottom: 10vh " class="copyright">
           Made by www.laseniorservices-agency.com
         </p>
       </div>

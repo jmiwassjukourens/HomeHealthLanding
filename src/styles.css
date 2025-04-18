@@ -512,6 +512,8 @@ padding-right: 3vh;
 .signature{
   width:50% ;
   margin: -5vh;
+  padding-bottom: 3vh;
+  padding-top: 3vh;
 }
 
 
@@ -842,6 +844,26 @@ width: 85%;
   font-weight: bold;
 }
 
+.section-10,.section-13{
+  background: #DFE0E2 !important;
+}
+.section-10-2{
+  margin-top: -3vh;
+}
+
+.section-11,.section-12{
+  background-image: url("/backgroundImages/section11.png");
+  background-size: cover; 
+  background-position: center left 35%; 
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay; 
+
+}
+
+.section-13-2{
+  margin-top: -3vh;
+}
+
 
   /* RESPONSIVE */
   @media (min-width: 768px) {
@@ -1102,4 +1124,32 @@ height: 20px;
 }
 
 
+.section-11,.section-12 {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative; 
+  padding-top: 100px;
+  padding-bottom: 100px;
+  
+  
+}
+
+.section-11-1,.section-12-1{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+
+
+}
+
+.section-11,.section-12-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;    
+
+}
 }

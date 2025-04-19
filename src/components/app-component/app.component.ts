@@ -68,5 +68,13 @@ export class AppComponent implements OnInit {
    
   ];
   
+  questionsEs = [
+    { question: "¿Cuánto cuesta?", answer: "", description_strong: "" },
+    { question: "¿Qué ubicaciones cubren?", answer: "", description_strong: "" },
+    { question: "¿Quién califica para el servicio?", answer: "", description_strong: "" },
+    { question: "¿Qué otros servicios tienen?", answer: "", description_strong: "" },
+    { question: "¿Cuál es la frecuencia y duración?", answer: "", description_strong: "" },
+  ];
+  
 
 }

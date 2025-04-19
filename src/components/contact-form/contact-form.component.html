@@ -4,36 +4,36 @@
     type="text" 
     name="name" 
     ngModel 
-    [placeholder]="type_lead === 'Assessment' ? 'Patient Name...' : 'My name is ...'" 
+    [placeholder]="lenguage === 'es' ? 'Nombre del paciente...' : (type_lead === 'Assessment' ? 'Patient Name...' : 'My name is ...')" 
     required 
     pattern="[A-Za-z\s]+" 
     #name="ngModel"
   />
   <div *ngIf="name.invalid && name.touched">
     <small class="error-message" *ngIf="name.errors?.['required']">
-      Name is required.
+      {{ lenguage === 'es' ? 'El nombre es requerido.' : 'Name is required.' }}
     </small>
     <small class="error-message" *ngIf="name.errors?.['pattern']">
-      Only letters are allowed.
+      {{ lenguage === 'es' ? 'Solo se permiten letras.' : 'Only letters are allowed.' }}
     </small>
   </div>
-  
+
   <!-- Teléfono -->
   <input 
     type="tel" 
     name="phone" 
     ngModel 
-    [placeholder]="type_lead === 'Assessment' ? 'Patient Phone Number...' : 'My phone is ...'" 
+    [placeholder]="lenguage === 'es' ? 'Número de teléfono del paciente...' : (type_lead === 'Assessment' ? 'Patient Phone Number...' : 'My phone is ...')" 
     required 
     pattern="^\+?\d{10,15}$" 
     #phone="ngModel"
   />
   <div *ngIf="phone.invalid && phone.touched">
     <small class="error-message" *ngIf="phone.errors?.['required']">
-      Phone is required.
+      {{ lenguage === 'es' ? 'El teléfono es requerido.' : 'Phone is required.' }}
     </small>
     <small class="error-message" *ngIf="phone.errors?.['pattern']">
-      Enter a valid phone number (10-15 digits).
+      {{ lenguage === 'es' ? 'Ingresa un número de teléfono válido (10-15 dígitos).' : 'Enter a valid phone number (10-15 digits).' }}
     </small>
   </div>
 
@@ -42,7 +42,7 @@
     [type]="type_lead === 'Assessment' ? 'text' : 'email'"
     name="email"
     ngModel
-    [placeholder]="type_lead === 'Assessment' ? 'Street Address' : 'My email is ...'"
+    [placeholder]="lenguage === 'es' ? 'Dirección' : (type_lead === 'Assessment' ? 'Street Address' : 'My email is ...')"
     [email]="type_lead !== 'Assessment'"
     #email="ngModel"
   />
@@ -55,16 +55,19 @@
     [ngStyle]="{ 'background-color': color_btn }"
   >
     {{
-      type_lead === 'Referral'
-        ? 'I WANT TO REFER PATIENTS'
-        : type_lead === 'Assessment'
-          ? 'I NEED AN ASSESSMENT'
-          : 'CALL ME TODAY'
+      lenguage === 'es' 
+        ? (type_lead === 'Referral' ? 'QUIERO REFERIR PACIENTES' : 
+           type_lead === 'Assessment' ? 'NECESITO UNA EVALUACIÓN' : 'LLÁMAME HOY')
+        : (type_lead === 'Referral' 
+            ? 'I WANT TO REFER PATIENTS' 
+            : type_lead === 'Assessment' 
+              ? 'I NEED AN ASSESSMENT' 
+              : 'CALL ME TODAY')
     }}
   </button>
 </form>
 
 <!-- MENSAJE DE AGRADECIMIENTO -->
 <div *ngIf="formSubmitted" class="thank-you-message">
-  <p>We’ll call you in minutes!</p>
+  <p>{{ lenguage === 'es' ? '¡Te llamaremos en minutos!' : 'We’ll call you in minutes!' }}</p>
 </div>

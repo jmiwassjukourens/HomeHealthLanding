@@ -17,6 +17,7 @@
       <!-- Menú de navegación -->
       <nav id="menu" [ngClass]="{ 'active': isMenuActive }">
         <ul class="un-header">
+          <br>
           <li><a routerLink="/home">Home</a></li>
           <li><a routerLink="/refferals">Referrals</a></li>
           <li><a routerLink="/location">Location</a></li>
@@ -181,7 +182,7 @@
                            [emailTemplate]="'template_7llv04q'"
                            [type_lead]="'Spanish'"
                            [emailAddress]="'info@sunvidamedicalclinic.com'"
-                           [lenguage]="'true'"
+                           [lenguage]="'en'"
                            [color_btn]="'#000000'">
         </app-contact-form>
       </div>
@@ -213,7 +214,7 @@
                            [emailTemplate]="'template_7llv04q'"
                            [type_lead]="'Coverage'"
                            [emailAddress]="'info@sunvidamedicalclinic.com'"
-                           [lenguage]="'true'"
+                           [lenguage]="'en'"
                            [color_btn]="'#23B5D3'">
         </app-contact-form>
       </div>
@@ -324,7 +325,7 @@
                            [emailTemplate]="'template_7llv04q'"
                            [type_lead]="'Coverage'"
                            [emailAddress]="'info@sunvidamedicalclinic.com'"
-                           [lenguage]="'true'"
+                           [lenguage]="'en'"
                            [color_btn]="'#23B5D3'">
         </app-contact-form>
     </div>
@@ -476,7 +477,7 @@
                            [emailTemplate]="'template_7llv04q'"
                            [type_lead]="'Assessment'"
                            [emailAddress]="'info@sunvidamedicalclinic.com'"
-                           [lenguage]="'true'"
+                           [lenguage]="'en'"
                            [color_btn]="'#23B5D3'">
         </app-contact-form>
       </div>
@@ -775,4 +776,760 @@
     <span class="white_effect">DIRECTIONS</span>
   </a>
 </footer>
+</div>
+
+
+<!--> Spanish Version<!-->
+
+<div *ngIf="lang == 'es'">
+  <main>
+    <div class="container-header">
+      <header>
+        <div class="logo">
+          <a href="#logo">
+            <img id="logo" class="logo_img" src="/logo.png" alt="Logo">
+          </a>
+        </div>
+  
+        <!-- Botón para abrir/cerrar menú -->
+        <div class="menu-toggle" (click)="toggleMenu()">
+          <span *ngIf="!isMenuActive">☰</span>
+          <span *ngIf="isMenuActive">✖</span>
+        </div>
+  
+        <!-- Menú de navegación -->
+        <nav id="menu" [ngClass]="{ 'active': isMenuActive }">
+          <ul class="un-header">
+            <br>
+            <li><a routerLink="/home">Inicio</a></li>
+            <li><a routerLink="/refferals">Referencias</a></li>
+            <li><a routerLink="/location">Ubicación</a></li>
+            <li><a routerLink="/aboutus">Sobre Nosotros</a></li>            
+          </ul>
+        </nav>
+      </header>
+    </div>
+    
+    <!-- Comentario cerrado correctamente -->
+    <!-- <router-outlet></router-outlet> -->
+  
+    <div class="section-web section-1">
+      <div class="section-1-1">
+        <br>
+        <div class="flag-container">
+          <a class="language-option" href="#" (click)="switchLanguage('es')">
+            <img class="flag_img" src="/spain.png" alt="Spanish Flag">
+            <span>Español</span>
+          </a>
+  
+          <a class="language-option" href="#" (click)="switchLanguage('en')">
+            <img class="flag_img" src="/united-states.png" alt="US Flag">
+            <span>Ingles</span>
+          </a>
+        </div>
+  
+        <section class="reviews">
+          <div class="container">
+            <h1 class="init-title">SERVICIOS DE CUIDADO DE SALUD A DOMICILIO</h1>
+            <br>
+            <h1 class="title-main">
+              Atención médica domiciliaria de <span class="cyan_effect">calidad<br>para adultos mayores</span><br>
+              cubierta por <span class="cyan_effect">Medicare.</span>
+            </h1>
+          </div>
+  
+          <div class="image-container">
+            <a href="https://maps.app.goo.gl/hmNgaZy5Vi5JeHHA9?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer">
+              <img class="review_img" src="/google.png" alt="Google Icon">
+            </a>
+              
+            <a href="https://m.yelp.com/biz/sun-vida-medical-clinic-san-fernando-valley" target="_blank" rel="noopener noreferrer">
+              <img class="review_img" src="/yelp.png" alt="Yelp Icon">
+            </a>
+          </div>
+  
+          <ul class="service-list">
+            <li>100% cubierto por <strong>Medicare</strong></li>
+            <li><strong>Enfermería</strong> especializada y <strong>atención primaria</strong></li>
+            <li><strong>Terapia física</strong> y <strong>cuidado personal</strong></li>
+            <li><strong>Comodidad</strong> e <strong>independencia</strong> en el hogar</li>
+            <li>Cuidadores <strong>certificados</strong> y <strong>compasivos</strong></li>
+          </ul>
+  
+          <h1 class="init-title cyan_effect">¡PROGRAME UNA CITA HOY!</h1>
+          <br>
+        </section>
+      </div>
+      
+      <div class="section1-2">
+        <section class="call24hs">
+          <div class="container-call24hs">
+            <button class="btn-appointment">
+              LLAMA LAS 24 HS
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+
+<!--> Section 2<-->
+  
+<div  class=" section-2">
+      
+  <div class="section-2-1">
+    <section class="reviews">
+      <div class="container">
+
+        <br>
+
+        <h1 class="title-main color-black">
+          ¿Necesitás 
+          <span class="cyan_effect">ayuda</span> en <span class="cyan_effect">casa</span>?
+        </h1>
+        
+      </div>  
+      
+      <div class="text-content">
+        <p class="paragraph_2 color-black">
+          Nuestro <strong>equipo de cuidadores</strong> está <strong>disponible las 24<br>
+          horas</strong> para <strong>atender tus necesidades.</strong><br><br> 
+      
+          Desde <strong>atención médica</strong> y <strong>dispositivos</strong> hasta <strong>recursos<br>
+          alimentarios,</strong> Los Angeles Senior Services<br>
+          tiene como objetivo <strong>apoyar a los adultos mayores</strong> y a sus <strong>familias</strong> en la<br>
+          comunidad local para lograr una mejor<br>
+          <strong>calidad de vida.</strong>
+      </p>
+      
+      </div>
+      <br>
+      <br>
+    </section>
+  </div>
+
+<div class="section-2-2">
+<section class="reviews">
+  <div class="container">
+
+    <div class="help-image-container">
+      <h1 class="help-title top-text">Suministros médicos en el hogar</h1>
+      <img class="help-image" src="help/1.png" alt="help1">
+
+    </div>
+
+    <div class="help-image-container">
+      <h1 class="help-title top-text">Enfermería y fisioterapia</h1>
+      <img class="help-image" src="help/3.png" alt="help1">
+    </div>
+
+    <div class="help-image-container">
+      <h1 class="help-title top-text">Asistencia para el cuidado personal</h1>
+      <img class="help-image" src="help/3.png" alt="help1">
+    </div>
+        <div class="help-image-container">
+      <h1 class="help-title top-text">Manejo de enfermedades crónicas</h1>
+      <img class="help-image" src="help/3.png" alt="help1">
+    </div>      <div class="help-image-container">
+      <h1 class="help-title top-text">Prevención de caídas y controles de seguridad</h1>
+      <img class="help-image" src="help/3.png" alt="help1">
+    </div>
+  </div> 
+</section>
+
+</div>
+</div>
+
+<div #section class="section-web section-3">
+  
+  <div class="section-3-2">
+        <br>
+        <img  class="logo_form" src="/logo-form.png" alt="Flags">
+
+          <h1 class="title-main-form">
+            (818) 922 7400
+          </h1>
+  
+      <div class="container text-content">
+        <app-contact-form style="padding: 0 20px;"
+                           [emailTemplate]="'template_7llv04q'"
+                           [type_lead]="'Spanish'"
+                           [emailAddress]="'info@sunvidamedicalclinic.com'"
+                           [lenguage]="'es'"
+                           [color_btn]="'#000000'">
+        </app-contact-form>
+      </div>
+
+  </div>
+</div>
+
+
+<div #section class="section-web section-4">
+  <div class="section-4-2">
+    <section>
+      <br>
+      <h1 class="title-main">
+        <span class="cyan_effect">¿Necesitás <br></span>recursos alimentarios<span class="cyan_effect">?</span>
+      </h1>
+      <h1 class="init-title">DEJANOS CONSEGUIRTE <span class="cyan_effect">TODO LO QUE NECESITÁS</span>.</h1>
+      <br>
+      <div class="text-content">
+        <p class="paragraph_2">
+          Completá el formulario de abajo y nos<br>pondremos en contacto con vos de inmediato.
+          <br><br>
+          Registrate hoy para recibir una<br>
+          <strong>bolsa mensual de alimentos frescos ¡de nuestra parte!</strong>
+        </p>
+      </div>
+    </section>
+  </div>
+
+  <div class="container text-content">
+    <app-contact-form style="padding: 0 20px;"
+                       [emailTemplate]="'template_7llv04q'"
+                       [type_lead]="'Coverage'"
+                       [emailAddress]="'info@sunvidamedicalclinic.com'"
+                       [lenguage]="'es'"
+                       [color_btn]="'#23B5D3'">
+    </app-contact-form>
+  </div>
+</div>
+
+
+
+
+
+<div class="section-web section-5">
+  
+  <div class="section-5-1">
+
+    <br>
+
+    <h1 class="title-main">
+      ¿Qué es el<br><span class="cyan_effect">cuidado de salud a domicilio</span>?
+    </h1>
+    
+
+    <div class="text-content">
+      <p class="paragraph_2">
+        El <strong>cuidado de salud a domicilio</strong> brinda <strong>servicios médicos</strong> y de
+        <strong>cuidado personal</strong> en la comodidad del
+        <strong>hogar de tu ser querido.</strong><br><br>
+    
+        En <strong>Los Angeles Senior Services</strong> ayudamos a los adultos mayores a mantenerse
+        <strong>seguros, independientes</strong> y
+        <strong>bien cuidados</strong> con:
+    </p>
+    
+  </div>
+  <br><br>
+  <div class="container-text-list">
+    <ul class="service-list">
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Enfermería especializada</strong> - Manejo de medicamentos, cuidado de heridas y monitoreo de salud.</li><br>
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Terapia física, ocupacional y del habla</strong> – Apoyo para movilidad, fuerza y recuperación.</li><br>
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Asistencia para el cuidado personal</strong> – Ayuda con el baño, vestimenta y tareas diarias.</li><br>
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Manejo de enfermedades crónicas</strong> – Cuidado para diabetes, enfermedades cardíacas, recuperación de un derrame cerebral y más.</li><br>
+      <li><i class="fas fa-heart cyan_effect"></i><strong class="cyan_effect_bright"> Prevención de caídas y controles de seguridad</strong> – Asegurando un entorno seguro en el hogar.</li>
+    </ul>
+    
+  </div>
+
+  </div>
+
+
+  <div class="section-5-2">
+
+    <section class="services-photos">
+
+      <div class="services-container">
+        <div class="services-list">
+          <div *ngFor="let service of services" class="services-card">
+            <div class="services-image" [ngStyle]="{'background-image': 'url(' + service.image + ')'}"></div>
+          </div>
+        </div>
+      </div>
+   
+    </section>
+
+  </div>
+</div>
+
+
+<div #section class="section-web section-6">
+  
+  <div class="section-6-1">
+    <br>
+    <h1 class="title-main">
+      ¿Quiénes pueden <span class="cyan_effect">beneficiarse</span> del<br>
+      <span class="cyan_effect">cuidado de salud a domicilio</span>?
+    </h1>
+    
+    <div class="text-content">
+      <p class="paragraph_2">
+        Los servicios de <strong>cuidado de salud a domicilio</strong> son cubiertos por <strong>Medicare</strong>. No se requieren costos adicionales para inscribirse.
+        
+        Nuestros servicios están destinados a<br>
+        <strong>adultos mayores que:</strong>
+      </p>
+    </div>
+    
+    <br><br>
+    <div class="container-text-list">
+      <ul class="service-list">
+        <li>✅ Están <strong>recuperándose</strong> de una enfermedad, cirugía o hospitalización.</li><br>
+        <li>✅ Necesitan ayuda para <strong>manejar</strong> condiciones crónicas como la diabetes o enfermedades cardíacas.</li><br>
+        <li>✅ Tienen <strong>desafíos de movilidad</strong> y necesitan asistencia con actividades diarias.</li><br>
+        <li>✅ Prefieren <strong>recibir atención en casa</strong> en lugar de en una institución.</li><br>
+      </ul> 
+    </div>
+  </div>
+  
+  <div class="section-6-2">
+    <div class="text-content">
+      <p class="paragraph_2">
+        <strong>¿No estás seguro de si tu ser querido califica?</strong><br><br>
+        
+        Contáctanos para una consulta gratuita y<br>
+        <strong>determinar la elegibilidad hoy.</strong>
+      </p>
+    </div>
+    <br>
+    <div class="container text-content">
+      <app-contact-form style="padding: 0 20px;"
+                         [emailTemplate]="'template_7llv04q'"
+                         [type_lead]="'Coverage'"
+                         [emailAddress]="'info@sunvidamedicalclinic.com'"
+                         [lenguage]="'es'"
+                         [color_btn]="'#23B5D3'">
+      </app-contact-form>
+    </div>
+  </div>
+</div>
+
+
+<div class="section-web section-7">
+  
+  <div class="section-7-1">
+
+    <br>
+  
+    <h1 class="title-main">
+      ¿Por qué las familias y los adultos mayores<br>
+      <span class="cyan_effect">confían</span> en nuestros servicios?
+    </h1>
+    <br>
+          <div class="container-text-list">
+            <ul class="service-list">
+              <li>🏡 <strong>Atención en la comodidad del hogar:</strong> Atención personalizada sin salir de casa.</li><br>
+              <li>🌟 <strong>Personal médico certificado y experimentado:</strong> Enfermeras, terapeutas y asistentes de salud a domicilio.</li><br>
+              <li>💜 <strong>Enfoque compasivo y centrado en la familia:</strong> Tratamos a tus seres queridos como si fueran nuestros.</li><br>
+              <li>🏡 <strong>Disponibles para ti las 24 horas:</strong> Nuestras líneas están abiertas para ti y tu familia. Nuestro personal está listo para cuidar de ti en cualquier momento.</li><br>
+            </ul>
+          </div>
+  </div>
+  
+
+
+  <div class="section-7-2">
+
+    <section class="services-photos">
+
+      <div class="services-container">
+        <div class="services-list">
+          <div *ngFor="let service of services" class="services-card">
+            <div class="services-image" [ngStyle]="{'background-image': 'url(' + service.image + ')'}"></div>
+          </div>
+        </div>
+      </div>
+   
+    </section>
+
+  </div>
+</div>
+  
+  <div class="section-web section-8">
+  
+    <div class="section-8-1">
+      <h1 class="title-main">
+        ¿Qué dicen las familias<br>
+        sobre nosotros?
+      </h1>
+    
+      <div class="text-content">
+        <h1 class="stars">⭐️⭐️⭐️⭐️⭐</h1>
+        <p class="paragraph_4">
+          “¡Las enfermeras y cuidadores de Los Angeles Senior Services fueron una bendición! Mi madre recibió la mejor atención, y no tuvimos que preocuparnos por nada.”
+        </p>
+        <h1 class="names">– Maria R.</h1>
+      </div>
+    
+      <div class="text-content">
+        <h1 class="stars">⭐️⭐️⭐️⭐️⭐</h1>
+        <p class="paragraph_4">
+          “No tenía idea de que el cuidado de salud a domicilio estaba completamente cubierto por Medicare. Ellos hicieron el proceso fácil, y mi papá está mucho mejor con su ayuda.”
+        </p>
+        <h1 class="names">– John L.</h1>
+      </div>
+    
+      <div class="text-content">
+        <h1 class="stars">⭐️⭐️⭐️⭐️⭐</h1>
+        <p class="paragraph_4">
+          “Mi mamá necesitaba ayuda en casa y he podido volver a trabajar con tranquilidad. Me han ayudado mucho. Son siempre atentos y profesionales.”
+        </p>
+        <h1 class="names">– Nora G.</h1>
+      </div>
+    
+    </div>
+    
+  
+  
+    <div class="section-8-2">
+      <br>
+      <h1 class="title-main">
+        ¿Quieres saber más?
+      </h1>
+      <p class="paragraph_2">¡Síganos!</p>
+      <br>
+            <div class="networks-container">
+              <a href="https://maps.app.goo.gl/hmNgaZy5Vi5JeHHA9?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer">
+                <img class="follow-us-network" src="/google.png" alt="Google Icon">
+              </a>
+              
+              <a href="https://m.yelp.com/biz/sun-vida-medical-clinic-san-fernando-valley" target="_blank" rel="noopener noreferrer">
+                <img class="follow-us-network" src="/facebookfu.png" alt="Facebook Icon">
+              </a>
+  
+              <a href="https://maps.app.goo.gl/hmNgaZy5Vi5JeHHA9?g_st=com.google.maps.preview.copy" target="_blank" rel="noopener noreferrer">
+                <img class="follow-us-network" src="/instagramfu.png" alt="Instagram Icon">
+              </a>
+              
+              <a href="https://m.yelp.com/biz/sun-vida-medical-clinic-san-fernando-valley" target="_blank" rel="noopener noreferrer">
+                <img class="follow-us-network" src="/yelp.png" alt="Yelp Icon">
+              </a>
+            </div>
+    </div>
+  
+        <div class="section-8-3">
+           <section class="call24hs">
+              <div class="container-call24hs">
+                    <button class="btn-appointment">
+                      LLAMA LAS 24 HS
+                    </button>
+              </div>
+            </section>
+      </div>
+  </div>
+
+  <div #section class="section-web section-9">
+  
+    <div class="section-9-2">
+      <section >
+        <br>
+        <h1 class="title-main">
+          ¿Necesitás una evaluación rápida<br>
+          de salud en el hogar<span class="cyan_effect">?</span>
+        </h1>
+        <h1 class="init-title cyan_effect">VISITAS EL MISMO DÍA Y AL DÍA SIGUIENTE <br>
+          DISPONIBLES</h1>
+        <br>
+        <div class="text-content">
+          <p class="paragraph_2">
+            Completá el formulario de abajo y nos 
+            pondremos en contacto contigo de inmediato!<br><br>
+        
+            *Solo el <strong>Medicare directo</strong> es <strong>elegible</strong> para el cuidado de salud a domicilio en Los Angeles.
+          </p>
+        </div>
+        
+  
+        <div class="container text-content">
+          <app-contact-form style="padding: 0 20px;"
+                             [emailTemplate]="'template_7llv04q'"
+                             [type_lead]="'Assessment'"
+                             [emailAddress]="'info@sunvidamedicalclinic.com'"
+                             [lenguage]="'es'"
+                             [color_btn]="'#23B5D3'">
+          </app-contact-form>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="section-web section-10">
+    <div class="section-10-1">
+      <section class="reviews">
+        <div class="container">
+          <br>
+          <h1 class="init-title color-black">Preguntas frecuentes</h1>
+          <h1 class="title-main color-black">
+            Preguntas frecuentes<br> más comunes
+          </h1>
+        </div>
+      </section>
+    </div>
+  
+    <div class="section-10-2">
+      <section class="more_about">
+        <div class="container">
+          <div class="text-content">
+            <div class="about_services_list">
+              <div class="service-item" *ngFor="let question of questionsEs; let i = index">
+                <button class="service-btn"
+                        [ngClass]="{'cyan': i % 2 === 0, 'black': i % 2 !== 0}"
+                        (click)="toggleService(i)">
+                  <span class="toggle-icon">{{ expandedIndex === i ? '-' : '+' }}</span>
+                  {{ question.question }}
+                </button>
+                <div class="service-content" *ngIf="expandedIndex === i">
+                  {{ question.answer }} <strong>{{ question.description_strong }}</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+  <div  class="section-web section-11">
+      
+    <div class="section-11-1">
+      <section class="reviews">
+        <div class="container">
+          <br>
+          <h1 class="title-main">
+            Centro de <span class="cyan_effect">salud</span> diurna para adultos<br> (ADHC)
+          </h1>
+          </div>
+          <div class="text-content">
+            <ul class="service-list">
+              <li>Transporte <strong>gratuito</strong></li>
+              <li><strong>Comidas preparadas por chef</strong></li>
+              <li>Servicios y ayuda de <strong>trabajo social</strong></li>
+              <li><strong>Ejercicio</strong> y <strong>terapia</strong></li>
+              <li><strong>Socialización</strong> y <strong>recreación</strong></li>
+              <li><strong>Artes, juegos</strong> y <strong>música</strong></li>
+              <li>Cuidado de salud diario dirigido por <strong>enfermera</strong></li>
+              <li><strong>Eventos especiales</strong> y <strong>fiestas</strong></li>
+              <li>Clases de <strong>inglés</strong> y <strong>español</strong></li>
+            </ul>
+          </div>
+          
+  
+        
+     <br>
+        
+      </section>
+    </div>
+    
+    <div class="section-11-2">
+         <section>
+            <div class="container-visitadhc">
+            
+                  <button class="btn-visitadhc">
+                    Visitar un ADHC
+                  </button>
+            </div>
+          </section>
+    </div>
+  
+  
+  </div>
+
+
+
+  <div  class="section-web section-12">
+      
+    <div class="section-12-1">
+      <section class="reviews">
+        <div class="container">
+          <br>
+          <h1 class="title-main">
+            Servicios de <span class="cyan_effect">hospicio</span> y <span class="cyan_effect">cuidado paliativo</span><br> 
+            de salud
+          </h1>
+          </div>
+          <div class="text-content">
+            <ul class="service-list">
+              <li><strong>Manejo del dolor</strong> y <strong>síntomas</strong></li>
+              <li><strong>Apoyo emocional</strong> y <strong>psicológico</strong></li>
+              <li><strong>Soporte médico 24/7</strong></li>
+              <li>Planes de <strong>cuidado personalizado</strong></li>
+              <li>Apoyo y <strong>educación familiar</strong></li>
+              <li>Servicios de <strong>cuidado espiritual</strong></li>
+              <li><strong>Cuidado en el hogar</strong> y <strong>en instalaciones</strong></li>
+              <li>Cuidado de <strong>respiro</strong> para <strong>familias</strong></li>
+              <li>Apoyo en el <strong>duelo</strong> y <strong>grief</strong></li>
+            </ul>
+          </div>
+          
+  
+  
+        
+     <br>
+        
+      </section>
+    </div>
+    
+    <div class="section-12-2">
+         <section>
+            <div class="container-visitadhc">
+            
+                  <button class="btn-visitadhc">
+                    LLAMA LAS 24 HS
+                  </button>
+            </div>
+          </section>
+    </div>
+  </div>
+
+
+  <div  class="section-web section-13">
+      
+    <div class="section-13-1">
+      <section class="reviews">
+        <br>
+        <h1 class="init-title color-black">NUESTRO COMPROMISO</h1>
+        <h1 class="title-main color-black">
+          Tu salud. <br>
+          Nuestra prioridad.
+        </h1>
+        
+  
+  
+        <div class="section-13-2">
+  
+          <div class="text-content">
+          <br><br>
+          <p class="paragraph_2 color-black">
+            Nuestra misión es construir 
+          <strong>relaciones a largo plazo</strong> con aquellos que puedan beneficiarse de <strong>programas de atención médica de alta calidad</strong> cubiertos por 
+          <strong>Medicare</strong> y <strong>Medi-Cal.</strong><br><br>
+            
+            Creemos que cada adulto mayor merece <strong>cuidado compasivo y personalizado</strong> que mejore su <strong>calidad de vida</strong> mientras brinda <strong>tranquilidad</strong> a sus familias.<br><br>
+            
+             Ya sea <strong>enfermería especializada, terapia, cuidado personal</strong> o <strong>manejo de enfermedades crónicas,</strong> nuestro equipo dedicado asegura que cada individuo reciba el apoyo que necesita, directamente en la <strong>comodidad de su hogar.</strong><br><br>
+            
+            Al guiar a los adultos mayores y sus seres queridos a través de <strong>soluciones de atención médica accesibles,</strong> los ayudamos a mantener su independencia, dignidad y salud durante los años venideros.
+          </p>
+  
+        </div>
+     
+        <img   class="signature" src="/signatureJaz.png" alt="signatureJaz">
+    
+  </div>
+  
+  
+      </section>
+    </div>
+    
+  
+  
+  
+  </div>
+
+
+ <!-- final Section-->
+ <div #section class="section-web section-final">
+  
+  <div class="section-final-1">
+      <section class="contact" id="contact">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        
+          <div class="network-container">
+            <a href="https://www.instagram.com/sunvidamedicalclinic/" target="_blank" class="network-link">
+              <img src="/instagram.png" alt="Instagram" class="network_img" id="instagram">
+            </a>
+            <p class="paragraph_3">&#64;laseniorservices</p>
+          </div>
+
+          <div class="network-container">
+            <a href="https://www.instagram.com/sunvidamedicalclinic/" target="_blank" class="network-link">
+              <img src="/facebook.png" alt="Facebook" class="network_img" id="facebook">
+              <p class="paragraph_3" style="padding-left:15px;">//laseniorservices</p>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+  </div>
+
+
+  <div class="section-final-2">
+    <section class="contact">
+      <div class="container">
+          <ul class="list-footer">
+            <li class="list-item-footer"><a class="link-footer" routerLink="/home">Inicio</a></li>
+            <li class="list-item-footer"><a class="link-footer" routerLink="/refferals">Referencias</a></li>
+            <li class="list-item-footer"><a class="link-footer" routerLink="/location">Ubicación</a></li>
+            <li class="list-item-footer"><a class="link-footer" routerLink="/aboutus">Acerca de Nosotros</a></li>
+            
+          </ul>
+      </div>
+    </section>
+  </div>
+
+<br>
+  
+  <!-- section12_2-desktop -->
+  <div class="section-final-3">
+    <section class="contact">
+      <div class="container">
+
+        <p style="padding: 0px;" class="paragraph_3">
+          Teléfono: 818-922-7400
+        </p>
+        <p style="padding: 0px;" class="paragraph_3">
+        info&#64;laseniorservices.com
+        </p>
+        <br>
+        <br>
+        <p style="padding: 5px 0px 0px 0px;" class="copyright">
+          &#169; Copyright 2025 - LA SENIOR SERVICES LLC
+        </p>
+        <p style="padding-bottom: 10vh " class="copyright">
+          Hecho por www.laseniorservices-agency.com
+        </p>
+      </div>
+    </section>
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div *ngIf="!isDesktop" style="margin-left:15px; margin-right:15px;" class="footer-item" id="call-us">
+        <img src="/footer/callus.png" alt="Call Us Icon" class="footer-icon">
+        <span class="white_effect">Llamanos</span>
+      </div>
+    </div>
+    
+    <div *ngIf="isDesktop" class="footer-container">
+      <div style="margin-left:15px; margin-right:15px;" class="footer-item">
+        <span class="white_effect title-main">(818) 208-1077</span>
+      </div>
+    </div>
+    
+    <div class="footer-divider"></div>
+    
+    <a href="https://maps.app.goo.gl/hmNgaZy5Vi5JeHHA9?g_st=com.google.maps.preview.copy" 
+       class="footer-item" 
+       style="margin-left:15px; text-decoration: none;" 
+       target="_blank" 
+       rel="noopener noreferrer">
+      <img src="footer/location.png" alt="Directions Icon" class="footer-icon">
+      <span class="white_effect">Direccion</span>
+    </a>
+  </footer>
 </div>

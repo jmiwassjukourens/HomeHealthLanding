@@ -13,7 +13,7 @@ import emailjs from '@emailjs/browser';
 export class ContactFormComponent implements OnInit {
   @Input() emailTemplate: string = '';
   @Input() emailAddress: string = '';
-  @Input() lenguage: string = ''; 
+  @Input() lenguage: string = 'en'; 
   @Input() type_lead: string = '';
   @Input() color_btn: string = '';
 

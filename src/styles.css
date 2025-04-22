@@ -299,21 +299,37 @@ nav ul li a {
   margin-bottom: -2vh;
 }
 
+.networks-wrapper {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .networks-container {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  gap: 2vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
   flex-wrap: nowrap;
-  margin:1vh;
+}
+
+
+.follow-us-network,.follow-us-network-location{
+  width: 6vh; 
 
 }
 
-.follow-us-network{
-  flex-direction: column;
-  width: 8vh; 
-  height: auto; 
-  display: inline-block; 
+.follow-us-network-location{
+  width: 12vh; 
+}
+
+.follow-us-google{
+  padding-left: 2vh; 
+}
+
+.follow-us-yelp{
+  padding-left: 2vh; 
 }
 
 .flag-container {
@@ -413,7 +429,7 @@ padding-right: 3vh;
   margin-left: -3vh ;
 }
 .container-visitadhc{
-  padding: 3vh;
+  padding-bottom: 3vh;
 }
 
 .btn-appointment, .btn-visitadhc,.btn-question{
@@ -434,7 +450,7 @@ padding-right: 3vh;
       text-overflow: ellipsis;
       white-space: nowrap;
       background-color: #000000; 
-        font-weight: 600; 
+      font-weight: 600; 
 }
 
 .btn-visitadhc {
@@ -452,7 +468,7 @@ padding-right: 3vh;
 }
 
 .section-2 ,.section-location-2-2{
-  background-color: #DFE0E2;
+  background-color: #FFFFFF;
 }
 
 .section-final {
@@ -863,6 +879,8 @@ width: 85%;
 .section-13-2{
   margin-top: -3vh;
 }
+
+
 
 
   /* RESPONSIVE */

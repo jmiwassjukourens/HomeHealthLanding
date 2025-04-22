@@ -76,5 +76,10 @@ export class AppComponent implements OnInit {
     { question: "¿Cuál es la frecuencia y duración?", answer: "", description_strong: "" },
   ];
   
-
+  goToLink(url: string): void {
+    if (!/^https?:\/\//i.test(url)) {
+      url = 'https://' + url;
+    }
+    window.open(url, '_blank');
+  }
 }

@@ -4,7 +4,7 @@
     type="text" 
     name="name" 
     ngModel 
-    [placeholder]="lenguage === 'es' ? 'Nombre del paciente...' : (type_lead === 'Assessment' ? 'Patient Name...' : 'My name is ...')" 
+    [placeholder]="lenguage === 'es' ? 'Nombre del paciente...' : (type_lead === 'type_lead_4' ? 'Patient Name...' : 'My name is ...')" 
     required 
     pattern="[A-Za-z\s]+" 
     #name="ngModel"
@@ -23,7 +23,7 @@
     type="tel" 
     name="phone" 
     ngModel 
-    [placeholder]="lenguage === 'es' ? 'Número de teléfono del paciente...' : (type_lead === 'Assessment' ? 'Patient Phone Number...' : 'My phone is ...')" 
+    [placeholder]="lenguage === 'es' ? 'Número de teléfono del paciente...' : (type_lead === 'type_lead_4' ? 'Patient Phone Number...' : 'My phone is ...')" 
     required 
     pattern="^\+?\d{10,15}$" 
     #phone="ngModel"
@@ -39,11 +39,11 @@
 
   <!-- Email o Dirección (opcional) -->
   <input
-    [type]="type_lead === 'Assessment' ? 'text' : 'email'"
+    [type]="type_lead === 'type_lead_4' ? 'text' : 'email'"
     name="email"
     ngModel
-    [placeholder]="lenguage === 'es' ? 'Dirección' : (type_lead === 'Assessment' ? 'Street Address' : 'My email is ...')"
-    [email]="type_lead !== 'Assessment'"
+    [placeholder]="lenguage === 'es' ? 'Dirección' : (type_lead === 'type_lead_4' ? 'Street Address' : 'My email is ...')"
+    [email]="type_lead !== 'type_lead_4'"
     #email="ngModel"
   />
 
@@ -57,11 +57,11 @@
     {{
       lenguage === 'es' 
         ? (type_lead === 'Referral' ? 'QUIERO REFERIR PACIENTES' : 
-           type_lead === 'Assessment' ? 'NECESITO UNA EVALUACIÓN' : 'LLÁMAME HOY')
+           type_lead === 'type_lead_4' ? 'NECESITO UNA EVALUACIÓN' : 'LLÁMAME HOY')
         : (type_lead === 'Referral' 
             ? 'I WANT TO REFER PATIENTS' 
-            : type_lead === 'Assessment' 
-              ? 'I NEED AN ASSESSMENT' 
+            : type_lead === 'type_lead_4' 
+              ? 'I NEED AN type_lead_4' 
               : 'CALL ME TODAY')
     }}
   </button>
